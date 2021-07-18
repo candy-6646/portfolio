@@ -12,12 +12,17 @@ let body = document.querySelector("body");
 
 let w = window.innerWidth;
 
-if(window.orientation > -1 || w < 700) {
+if(window.orientation > -1 || w < 900) {
 
     document.querySelector("#top .left-nav-bar").remove();
+
     let topSection = document.querySelector("#top");
     topSection.style.width = "100vw";
     topSection.style.margin = "0px"; 
+
+    let aboutSec = document.getElementById("about");
+    aboutSec.style.width = "100vw";
+    aboutSec.style.margin = "0px"; 
 
     let div = document.createElement("div");
     div.id = "nav-bar";
