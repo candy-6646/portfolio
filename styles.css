@@ -323,10 +323,9 @@ body {
 .about-description>div {
 	width: 100%;
 	margin: 10px 0 10px 0;
-	border: 1px solid;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: flex-start;
 	padding: 10px;
 }
 
@@ -347,12 +346,6 @@ body {
 	font-family: cursive, 'Brush Script MT';
 }
 
-
-.about-description>div:nth-child(4) {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
 
 .about-description>div:nth-child(4)>button {
 	margin: 3px;
