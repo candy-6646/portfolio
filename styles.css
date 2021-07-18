@@ -200,12 +200,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 0px;
-	margin-top: 20px;
+	padding: 10px 0px 10px 0px;
 }
 
 #top > div.heading.row > div:nth-child(1)>div {
-	margin: 10px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
 }
 
 #top .intro {
@@ -244,5 +243,5 @@ body {
 }
 
 .heading .titleBtns>button {
-	margin: 0px 3px 0px 3px;
+	margin: 0px 2px 0px 2px;
 }
