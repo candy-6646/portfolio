@@ -311,8 +311,8 @@ body {
 	color: #0d6efd;
 }
 
-#carouselExampleSlidesOnly , .about-description {
-	height: 20rem;
+#carouselExampleSlidesOnly {
+	height: auto;
 	width: 90%;
 }
 
@@ -329,9 +329,10 @@ body {
 	padding: 10px;
 }
 
-.about-description>div>h4 {
+.about-description>div>h5 {
 	color: #0d6efd;
 	border-bottom: 3px solid #0d6efd;
+	padding: 5px;
 }
 
 .about-description>div:nth-child(2) {
