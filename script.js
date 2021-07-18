@@ -36,6 +36,10 @@ if(window.orientation > -1 || w < 900) {
     skillsSec.style.margin = "0px"; 
     skillsSec.style.marginTop = "12rem"; 
 
+    let hobbiesSec = document.getElementById("hobbies");
+    hobbiesSec.style.width = "100vw";
+    hobbiesSec.style.margin = "0px"; 
+
 
     let div = document.createElement("div");
     div.id = "nav-bar";
