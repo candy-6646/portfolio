@@ -290,7 +290,7 @@ body {
 }
 #about .row {
 	width: 100%;
-	height: 85%;
+	height: 85vh;
 }
 
 #about .row > div {
@@ -301,11 +301,11 @@ body {
 
 #about .section-title {
 	height: 15%;
-	width: 100%;
+	width: 60%;
+	margin-left: 30px;
 }
 
 #about .section-title>h1 {
-	margin-left: 30px;
 	border: none;
 	border-bottom: 4px solid #0d6efd;
 	color: #0d6efd;
@@ -313,37 +313,36 @@ body {
 
 #carouselExampleSlidesOnly {
 	height: auto;
-	width: 90%;
-}
-
-#carouselExampleSlidesOnly {
+	width: 80%;
 	box-shadow:0 0 10px 3px #0d6efd;
 }
 
+
 .about-description>div {
 	width: 100%;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 10px 0px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 8px;
+	padding: 10px;
 }
 
 .about-description>div>h5 {
 	color: #0d6efd;
 	border-bottom: 3px solid #0d6efd;
 	padding-top: 10px;
+	display: flex;
 }
 
 .about-description>div:nth-child(2) {
 	color: #423F3E;
-	padding: 15px;
+	letter-spacing: 1px;
 	font-family: cursive, 'Brush Script MT';
 }
 
 .about-description>div:nth-child(3) {
 	color: #423F3E;
-	padding: 15px;
+	letter-spacing: 2px;
 	font-family: cursive, 'Brush Script MT';
 }
 
