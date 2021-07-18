@@ -24,6 +24,11 @@ if(window.orientation > -1 || w < 900) {
     aboutSec.style.width = "100vw";
     aboutSec.style.margin = "0px"; 
 
+    let aboutDescSec = document.querySelectorAll(".about-description>div");
+    for(let i = 0; i < aboutDescSec.length; i++) {
+      aboutDescSec[i].style.justifyContent =  "center";
+    }
+    
     let div = document.createElement("div");
     div.id = "nav-bar";
     div.innerHTML = `<button class="btn btn-outline-primary" id="navBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
