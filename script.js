@@ -9,6 +9,13 @@ var typewriter = new Typewriter(app, {
 
 let body = document.querySelector("body");
 
+let skillsIcons = document.querySelectorAll("#skills .skill-icon");
+for(let i = 0; i < skillsIcons.length; i++) {
+  skillsIcons[i].style.backgroundImage = `url("images/s${i + 1}.png")`;
+  skillsIcons[i].style.backgroundSize = "contain";
+  skillsIcons[i].style.backgroundRepeat = "no-repeat";
+}
+
 
 let w = window.innerWidth;
 
@@ -23,6 +30,11 @@ if(window.orientation > -1 || w < 900) {
     let aboutSec = document.getElementById("about");
     aboutSec.style.width = "100vw";
     aboutSec.style.margin = "0px"; 
+
+    let skillsSec = document.getElementById("skills");
+    skillsSec.style.width = "100vw";
+    skillsSec.style.margin = "0px"; 
+    skillsSec.style.marginTop = "12rem"; 
 
 
     let div = document.createElement("div");
