@@ -232,6 +232,12 @@ body {
 	#top-nav {
 		display: none;
 	}
+
+	.divider {
+	  border-top: 10px dotted #0d6efd;
+	  border-bottom: none;
+	  width: 20%;
+	}
 }
 
 
