@@ -27,10 +27,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
 
+
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	
 </head>
 
-<body>
+<body onload="aos_init()">
 
 	<!-- Laptop navBar -->
 	<div id="top-nav">
@@ -46,7 +49,7 @@
 		          <a class="nav-link active" aria-current="page" href="#home">Home</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#">About</a>
+		          <a class="nav-link" href="#about">About</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="#skills">Skills</a>
@@ -92,7 +95,7 @@
             
             <div class="navigationBtns">
               <a href="#home"><div class="nav-optn"><i class="fa fa-home" aria-hidden="true"></i> Home</div></a>
-              <a href=""><div class="nav-optn"><i class="fa fa-user-o" aria-hidden="true"></i> About</div></a>
+              <a href="#about"><div class="nav-optn"><i class="fa fa-user-o" aria-hidden="true"></i> About</div></a>
               <a href="#skills"><div class="nav-optn"><i class="fa fa-trophy" aria-hidden="true"></i> Skills</div></a>
               <a href=""><div class="nav-optn"><i class="fa fa-file-text-o" aria-hidden="true"></i> Projects</div></a>
               <a href=""><div class="nav-optn"><i class="fa fa-handshake-o" aria-hidden="true"></i> Contact</div></a>
@@ -120,7 +123,7 @@
 			
 			<div class="col-lg-6 col-md-6 col-sm-12">
 					
-					<div class="home-heading">
+					<div class="home-heading"  data-aos="fade-right">
 						
 						<div class="intro">
 				 			<div><h1>Hi,<br>I' am <span>Kundan</span></h1></div>
@@ -141,7 +144,7 @@
 
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				
-				<div class="home-img-container">
+				<div class="home-img-container" data-aos="fade-left">
 					<div class="home-img"></div>
 				</div>
 
@@ -163,7 +166,7 @@
 			
 			<div class="col-lg-5 col-md-5 col-sm-12">
 				
-				<div class="about-left">
+				<div class="about-left" data-aos="zoom-in">
 					<div class="about-img"></div>
 				</div>
 
@@ -172,15 +175,16 @@
 			<div class="col-lg-7 col-md-7 col-sm-12">
 				
 				<div class="about-right">
-					<div class="about-text">
+					<div class="about-text" data-aos="zoom-in">
 						<div class="about-text-heading">Hey! I'm Kundan Kumar.</div>
 						<div class="about-text-para">
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-							<p> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+							<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 						</div>
 						<div class="about-text-buttons">
-							<button class="btn btn-dark"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
-							<button class="btn btn-danger"><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
+							<button class="btn btn-primary" onclick="aboutViewMore()">View More</button>
+							<button class="btn btn-outline-danger" id="ytBtn"><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
+							<button class="btn btn-outline-danger" id="newsLetterBtn"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
 						</div>
 					</div>
 				</div>
@@ -212,7 +216,7 @@
 
 					<div class="card-container">
 					
-						<div class="card" style="width: 18rem;">
+						<div class="card" style="width: 18rem;" data-aos="flip-right">
 						  <img src="images/c1.png" class="card-img-top" alt="...">
 						  <div class="card-body">
 						    <h5 class="card-title">Front-end development</h5>
@@ -229,7 +233,7 @@
 
 					<div class="card-container">
 					
-						<div class="card" style="width: 18rem;">
+						<div class="card" style="width: 18rem;" data-aos="flip-right">
 						  <img src="images/c2.png" class="card-img-top" alt="...">
 						  <div class="card-body">
 						    <h5 class="card-title">Back-end Development</h5>
@@ -246,7 +250,7 @@
 
 					<div class="card-container">
 					
-						<div class="card" style="width: 18rem;">
+						<div class="card" style="width: 18rem;" data-aos="flip-right">
 						  <img src="images/c3.png" class="card-img-top" alt="...">
 						  <div class="card-body">
 						    <h5 class="card-title">Coursework</h5>
@@ -279,8 +283,6 @@
 	      </div>
 	      <div class="modal-body">
 
-	      	
-
 	      	</div>
 
 	      </div>
@@ -289,11 +291,26 @@
 	  </div>
 	</div>
 
+
+
+
+
+	<hr class="divider">
+
+
+	<!-- Projects Section -->
+	<section id="projects">
+		<div class="section-heading"><h1>Projects</h1></div>
+
+	</section>
+
 	
 
 
 	
  	<script type="text/javascript" src="script.js"></script>
 
+ 	<!-- Aos script -->
+ 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
