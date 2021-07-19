@@ -81,7 +81,11 @@ body {
 	width: 14rem;
 }
 
-#nav-bar .offcanvas-body .navigationBtns>div {
+#nav-bar .offcanvas-body .navigationBtns>a {
+	text-decoration: none;
+}
+
+#nav-bar .offcanvas-body .navigationBtns>a>div {
 	height: 4rem;
 	width: 100%;
 	color: white;
@@ -90,12 +94,12 @@ body {
 	font-size: 20px;
 }
 
-#nav-bar .offcanvas-body .navigationBtns>div:hover {
+#nav-bar .offcanvas-body .navigationBtns>a>div:hover {
 	cursor: pointer;
 	color: #0d6efd;
 }
 
-#nav-bar .offcanvas-body .navigationBtns>div>i {
+#nav-bar .offcanvas-body .navigationBtns>a>div>i {
 	margin-right: 10px;
 }
 
