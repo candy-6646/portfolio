@@ -1,11 +1,3 @@
-var app = document.getElementById('app');
-
-var typewriter = new Typewriter(app, {
-    strings: ['Developer', 'Designer', 'An Artist'],
-    autoStart: true,
-    loop:true
-});
-
 
 let body = document.querySelector("body");
 
@@ -15,42 +7,35 @@ let w = window.innerWidth;
 
 if(window.orientation > -1 || w < 900) {
 
-    document.querySelector("#top-nav").remove();
+}
 
 
 
-    let div = document.createElement("div");
-    div.id = "nav-bar";
-    div.innerHTML = `<button class="btn btn-outline-primary" id="navBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
+var app = document.getElementById('app');
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-            <button type="button" class="btn btn-outline-primary text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="nav-img">
-            
-            </div>
-            <div class="social-icons">
-              <div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-              <div class="social-icon"><i class="fa fa-skype" aria-hidden="true"></i></div>
-              <div class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-              <div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-            </div>
-            
-            <div class="navigationBtns">
-              <div class="nav-optn"><i class="fa fa-home" aria-hidden="true"></i> Home</div>
-              <div class="nav-optn"><i class="fa fa-user-o" aria-hidden="true"></i> About</div>
-              <div class="nav-optn"><i class="fa fa-trophy" aria-hidden="true"></i> Skills</div>
-              <div class="nav-optn"><i class="fa fa-file-text-o" aria-hidden="true"></i> Projects</div>
-              <div class="nav-optn"><i class="fa fa-handshake-o" aria-hidden="true"></i> Contact me</div>
-            </div>
-          </div>
-        </div>`;
+var typewriter = new Typewriter(app, {
+    strings: ['Developer', 'Designer', 'An Artist'],
+    autoStart: true,
+    loop:true
+});
 
-        body.append(div);
 
+//Get the button:
+mybutton = document.getElementById("scrollBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

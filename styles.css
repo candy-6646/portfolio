@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	font-family: 'Crete Round', serif;
 	scroll-behavior: smooth;
 }
 
@@ -11,8 +10,10 @@ body {
 /*Navbar button*/
 #navBtn {
 	position: fixed;
-	top: 10px;
-	right: 10px;
+	top: 20px;
+	right: 20px;
+	display: none;
+	z-index: 20;
 }
 
 
@@ -31,8 +32,12 @@ body {
 	padding: 0px;
 }
 
+#nav-bar .nav-body {
+	overflow: auto !important;
+}
+
 #nav-bar .offcanvas-body>div {
-	margin: 5px 0px 5px 0px
+	margin: 5px 0px 5px 0px;
 }
 
 #nav-bar .offcanvas-body .nav-img {
@@ -113,6 +118,22 @@ body {
   background-color: white;
 }
 
+#scrollBtn {
+	position: fixed;
+	z-index: 20;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*home section*/
@@ -127,12 +148,13 @@ body {
 
 #home .home-heading, .home-img-container {
 	/*width: 100%;*/
-	height: 22rem;
+	height: calc(100vh - 56px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
 
 #home .home-heading > div {
 	margin-bottom: 30px;
@@ -184,3 +206,20 @@ body {
 	margin: 0px !important;
 }
 
+@media (max-width: 768px) {
+	#home .home-heading, .home-img-container {
+		height: 21rem;
+	}
+
+	#home .titleBtns > button {
+		margin-right: 6px;
+	}
+
+	#navBtn {
+		display: block;
+	}
+
+	#top-nav {
+		display: none;
+	}
+}

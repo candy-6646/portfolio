@@ -32,6 +32,7 @@
 
 <body>
 
+	<!-- Laptop navBar -->
 	<div id="top-nav">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		  <div class="container-fluid">
@@ -63,6 +64,57 @@
 		</nav>
 	</div>
 
+
+
+
+
+	<!-- mobile navBar -->
+	<div id="nav-bar">
+		<button class="btn btn-outline-primary" id="navBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn btn-outline-primary text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+          </div>
+          <div class="offcanvas-body nav-body">
+            <div class="nav-img">
+            
+            </div>
+            <div class="social-icons">
+              <div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+              <div class="social-icon"><i class="fa fa-skype" aria-hidden="true"></i></div>
+              <div class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+              <div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            </div>
+            
+            <div class="navigationBtns">
+              <div class="nav-optn"><i class="fa fa-home" aria-hidden="true"></i> Home</div>
+              <div class="nav-optn"><i class="fa fa-user-o" aria-hidden="true"></i> About</div>
+              <div class="nav-optn"><i class="fa fa-trophy" aria-hidden="true"></i> Skills</div>
+              <div class="nav-optn"><i class="fa fa-file-text-o" aria-hidden="true"></i> Projects</div>
+              <div class="nav-optn"><i class="fa fa-handshake-o" aria-hidden="true"></i> Contact me</div>
+            </div>
+          </div>
+        </div>
+	</div>
+
+
+
+	<!-- scroll to top button -->
+	<button class="btn btn-danger" id="scrollBtn" onclick="topFunction()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+
+
+
+
+
+
+
+
+	<!-- Home section -->
 	<section id="home">
 		<div class="row">
 			
