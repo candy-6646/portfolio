@@ -187,20 +187,21 @@ for(let i = 0; i < allBtnOfSkill.length; i++) {
             <div class="progress">
               <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+          </div>
 
             <div class="progress-container">
-            <div class="progress-title">OOPS</div>
-            <div class="progress">
-              <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-title">OOPS</div>
+              <div class="progress">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
 
             <div class="progress-container">
-            <div class="progress-title">Data Structures and Algorithms</div>
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            
-          </div>`;
+              <div class="progress-title">Data Structures and Algorithms</div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 72%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>`;
 
     }
 
