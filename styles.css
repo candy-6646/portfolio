@@ -372,7 +372,7 @@ body {
 
 @media (max-width: 768px) {
 	#about .about-left {
-		height: 23rem;
+		height: 20rem;
 	}
 
 	#about .about-left .about-img {
