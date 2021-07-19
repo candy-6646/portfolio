@@ -373,6 +373,9 @@ body {
 @media (max-width: 768px) {
 	#about .about-left {
 		height: 23rem;
+	}
+
+	#about .about-left .about-img {
 		background-image: url("images/profile5.jpg");
 	}
 
