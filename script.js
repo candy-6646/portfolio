@@ -217,7 +217,7 @@ for(let i = 0; i < allBtnOfSkill.length; i++) {
 // maintaining responsiveness of project section
 let w = window.innerWidth;
 //window.orientation > -1
-if(w < 350) {
+if(w < 600) {
   console.log("y")
  let allprojectsDetails =  document.querySelectorAll(".card-body .project-info");
  let toggleBtn = document.querySelectorAll("#project-display-btn");
