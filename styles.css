@@ -322,8 +322,10 @@ body {
 	width: auto;
 	font-family: 'Crete Round', serif;
 	background-color: #EEEEEE;
+}
+
+#about .section-heading {
 	padding: 30px;
-	position: relative;
 }
 
 
@@ -338,15 +340,10 @@ body {
 
 
 #about .about-navigator {
-	position: absolute;
 	height: 25rem;
-	width: 3rem;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	z-index: 5;
-	top: 26%;
-	left: 37%;
 }
 
 .about-navigator .line {
@@ -428,6 +425,11 @@ body {
 	margin-right: 10px;
 }
 
+.about-navigator-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
 
@@ -438,20 +440,23 @@ body {
 	}
 
 	.about-right {
-		height: 40rem;
+		height: 45rem;
+	}
+
+	#about .about-navigator {
+		height: 3rem;
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	.about-right .about-right-text {
 		height: 10rem;
 	}
 
-	.about-right>div {
-		padding-left: 10px;
-	}
-
-	#about .about-navigator {
-		left: 5px;
-		width: 2rem;
+	.about-navigator .line  {
+		width: 4rem;
+		height: 0;
 	}
 
 
