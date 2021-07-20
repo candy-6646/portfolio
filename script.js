@@ -82,7 +82,7 @@ for(let i = 0; i < allBtnOfSkill.length; i++) {
             
           </div>
           <div class="progress-container">
-            <div class="progress-title">React JS</div>
+            <div class="progress-title">React Js</div>
             <div class="progress">
               <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -121,7 +121,7 @@ for(let i = 0; i < allBtnOfSkill.length; i++) {
             
           </div>
           <div class="progress-container">
-            <div class="progress-title">Sql</div>
+            <div class="progress-title">SQL</div>
             <div class="progress">
               <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>

@@ -255,7 +255,7 @@ body {
 	height: auto;
 	width: auto;
 	font-family: 'Crete Round', serif;
-	background-color: #EEEEEE;
+	background-color: white;
 	padding: 30px;
 }
 
@@ -321,145 +321,8 @@ body {
 	height: auto;
 	width: auto;
 	font-family: 'Crete Round', serif;
-	background-color: #EEEEEE;
-}
-
-#about .section-heading {
-	padding: 30px;
-}
-
-
-#about .about-left, .about-right {
-	width: 100%;
-	height: 85vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-
-#about .about-navigator {
-	height: 25rem;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-.about-navigator .line {
-	border: 2px solid #FF7600;
-	height: 4rem;
-	border-radius: 6px;
-}
-
-.about-navigator .circle {
-	height: 35px;
-	width: 35px;
-	border-radius: 50%;
-	border: 2px solid #FF7600;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 20px;
 	background-color: white;
-	color: #FF7600;
-}
-
-.about-navigator .circle:hover {
-	background-color: #FF7600;
-	color: white;
-	cursor: pointer;
-}
-
-
-#about .about-left .about-img {
-	width: 70%;
-	height: 25rem;
-	background: url("images/profile2.jpg") top center;
-	background-size: cover;
-	border-radius: 10px;
-}
-
-
-.about-right .about-right-heading {
-	height: 4rem;
-	width: 100%;
-}
-
-.about-right .about-right-heading> div {
-	color: #0d6efd;
-	border-bottom: 3px solid #0d6efd;
-	display: inline-block;
-	letter-spacing: 1.5px;
-	font-size: 23px;
-}
-
-.about-right .about-right-text {
-	height: 6rem;
-	width: 100%;
-}
-
-.about-right .about-right-list {
-	height: 12rem;
-	width: 100%;
-	font-family: 'Amaranth', sans-serif;
-}
-
-.about-right-list .list-item {
-	height: 3rem;
-}
-
-.about-right-list .list-item  > i {
-	margin-right: 5px;
-	color: #0d6efd;
-}
-
-.about-right .about-right-footer {
-	height: 3rem;
-	width: 100%;
-	display: flex;
-	align-items: center;
-}
-
-.about-right .about-right-footer > button {
-	margin-right: 10px;
-}
-
-.about-navigator-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-
-
-@media (max-width: 768px) {
-	#about .about-left {
-		display: none;
-	}
-
-	.about-right {
-		height: 45rem;
-	}
-
-	#about .about-navigator {
-		height: 3rem;
-		width: 100%;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.about-right .about-right-text {
-		height: 10rem;
-	}
-
-	.about-navigator .line  {
-		width: 4rem;
-		height: 0;
-	}
-
-
+	padding: 30px;
 }
 
 
@@ -493,3 +356,107 @@ body {
 	background-color: white;
 }
 
+#projects .projects-container {
+	margin-top: 20px;
+	height: 80vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+
+.projects-container .project-details {
+	width: 90%;
+	height: auto;
+	border: 2px solid #0d6efd;
+	padding: 15px;
+	margin: 20px 5% 20px 5%;
+	position: relative;
+	background-color: #F9F9F9;
+	border-radius: 6px;
+}
+
+#project-display-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.project-details .project-title {
+	color: #0d6efd;
+	font-family: 'Amaranth', sans-serif;
+}
+
+#projects .card-body {
+	border: none;
+	background-color: #F9F9F9;
+}
+
+#projects .card-body .project-info {
+	width: 100%;
+	height: 18rem;
+	background-color: white;
+	border: 1px solid #B2B1B9;
+}
+
+
+#projects .card-body .project-info .project-inner-title {
+	width: 100%;
+	height: 3rem;
+	border-bottom: 1px solid #B2B1B9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects .card-body .project-info .project-desc {
+	width: 100%;
+	height: 15rem;
+	display: flex;
+}
+
+.project-desc > div:nth-child(1) {
+	border-right: 1px solid #B2B1B9;
+}
+
+.project-desc > div {
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+}
+
+.project-desc h5 {
+	color: #5C33F6;
+}
+
+.project-desc i {
+	color: #5C33F6;
+	margin-right: 5px;
+}
+
+
+@media (max-width: 1008px) {
+	#projects .card-body .project-info {
+		height: 30rem;
+	}
+
+
+	#projects .card-body .project-info .project-desc {
+		height: 27rem;
+	}
+}
+
+
+@media (max-width: 768px) {
+	#projects .card-body .project-info {
+		height: 42rem;
+	}
+
+
+	#projects .card-body .project-info .project-desc {
+		height: 39rem;
+	}
+}
