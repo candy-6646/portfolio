@@ -363,7 +363,30 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
+	#about .about-left {
+		display: none;
+	}
+
+	#about .about-right {
+		height: 40rem;
+		background-color: #EEEEEE;
+		border-radius: 6px;
+	}
+
+	#about .about-text-container {
+		width: 100%;
+		height: 35rem;
+	}
+
+	.about-text-container > div {
+		padding: 20px;
+	}
+}
+
+
+
+@media (max-width: 600px) {
 	#about .about-left {
 		display: none;
 	}
