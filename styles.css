@@ -438,7 +438,7 @@ body {
 }
 
 
-@media (max-width: 1008px) {
+@media (max-width: 800px) {
 	#projects .card-body .project-info {
 		height: 30rem;
 	}
@@ -450,13 +450,3 @@ body {
 }
 
 
-@media (max-width: 768px) {
-	#projects .card-body .project-info {
-		height: 42rem;
-	}
-
-
-	#projects .card-body .project-info .project-desc {
-		height: 39rem;
-	}
-}

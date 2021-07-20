@@ -211,6 +211,30 @@ for(let i = 0; i < allBtnOfSkill.length; i++) {
 
 
 
+
+
+
+// maintaining responsiveness of project section
+let w = window.innerWidth;
+//window.orientation > -1
+if(w < 350) {
+  console.log("y")
+ let allprojectsDetails =  document.querySelectorAll(".card-body .project-info");
+ let toggleBtn = document.querySelectorAll("#project-display-btn");
+
+  for(let i = 0; i < allprojectsDetails.length; i++) {
+    allprojectsDetails[i].remove();
+    toggleBtn[i].style.display = "none";
+  }
+
+
+}
+
+
+
+
+
+
 // Aos fade effects
 // Init AOS
   function aos_init() {
