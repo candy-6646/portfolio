@@ -220,8 +220,8 @@ for(let i = 0; i < allBtnOfSkill.length; i++) {
 // Init AOS
   function aos_init() {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out-back",
-      once: false
+      once: true
     });
   }

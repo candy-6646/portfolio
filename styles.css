@@ -33,7 +33,7 @@ body {
 }
 
 #nav-bar .nav-body {
-	overflow: auto !important;
+	overflow-y: auto;
 }
 
 #nav-bar .offcanvas-body>div {
