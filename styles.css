@@ -112,6 +112,7 @@ body {
 
 
 
+/*same styling for all sections*/
 
 
 .divider {
@@ -254,15 +255,15 @@ body {
 	height: auto;
 	width: auto;
 	font-family: 'Crete Round', serif;
+	background-color: #EEEEEE;
 	padding: 30px;
-	background-color: white;
 }
 
 #skills .card-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 90vh;
+	height: 85vh;
 	width: 100%;
 }
 
@@ -320,71 +321,152 @@ body {
 	height: auto;
 	width: auto;
 	font-family: 'Crete Round', serif;
+	background-color: #EEEEEE;
 	padding: 30px;
-	background-color: white;
+	position: relative;
 }
+
 
 #about .about-left, .about-right {
 	width: 100%;
-	height: 28rem;
+	height: 85vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #EEEEEE;
+}
+
+
+#about .about-navigator {
+	position: absolute;
+	height: 25rem;
+	width: 3rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 5;
+	top: 26%;
+	left: 37%;
+}
+
+.about-navigator .line {
+	border: 2px solid #FF7600;
+	height: 4rem;
 	border-radius: 6px;
 }
 
-#about .about-left {
+.about-navigator .circle {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	border: 2px solid #FF7600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
 	background-color: white;
+	color: #FF7600;
 }
 
+.about-navigator .circle:hover {
+	background-color: #FF7600;
+	color: white;
+	cursor: pointer;
+}
+
+
 #about .about-left .about-img {
-	width: 80%;
-	height: 60%;
-	background-image: url("images/profile2.jpg");
+	width: 70%;
+	height: 25rem;
+	background: url("images/profile2.jpg") top center;
 	background-size: cover;
-	box-shadow:0 0 10px 3px #0d6efd;
 	border-radius: 10px;
 }
 
-#about .about-right .about-text {
-	margin: 10px;
+
+.about-right .about-right-heading {
+	height: 4rem;
+	width: 100%;
 }
 
-#about .about-right .about-text>div {
-	padding: 15px;
-}
-
-.about-text-heading {
-	border: none;
+.about-right .about-right-heading> div {
+	color: #0d6efd;
 	border-bottom: 3px solid #0d6efd;
+	display: inline-block;
+	letter-spacing: 1.5px;
+	font-size: 23px;
+}
+
+.about-right .about-right-text {
+	height: 6rem;
+	width: 100%;
+}
+
+.about-right .about-right-list {
+	height: 12rem;
+	width: 100%;
 	font-family: 'Amaranth', sans-serif;
-	font-size: 18px;
-	font-weight: bold;
+}
+
+.about-right-list .list-item {
+	height: 3rem;
+}
+
+.about-right-list .list-item  > i {
+	margin-right: 5px;
 	color: #0d6efd;
 }
 
-.about-text-buttons > button{
-	margin-left: 5px;
+.about-right .about-right-footer {
+	height: 3rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
+
+.about-right .about-right-footer > button {
+	margin-right: 10px;
+}
+
+
+
 
 
 @media (max-width: 768px) {
 	#about .about-left {
-		height: 20rem;
+		display: none;
 	}
 
-	#about .about-right {
-		height: 35rem;
+	.about-right {
+		height: 40rem;
 	}
+
+	.about-right .about-right-text {
+		height: 10rem;
+	}
+
+	.about-right>div {
+		padding-left: 10px;
+	}
+
+	#about .about-navigator {
+		left: 5px;
+		width: 2rem;
+	}
+
 
 }
 
 
-#ytBtn, #newsLetterBtn {
-	display: none;
-}
+
+
+
+
+
+
+
+
+
 
 
 

@@ -208,64 +208,6 @@ for(let i = 0; i < allBtnOfSkill.length; i++) {
 
 
 
-//adding eventListener on about section view more button
-let aboutViewMoreBtn = false;
-let aboutTexts = ['']
-
-function aboutViewMore() {
-  
-  let aboutTextHeading = document.querySelector(".about-text-heading");
-  let aboutTextPara = document.querySelectorAll(".about-text-para > p");
-
-  if(aboutViewMoreBtn) {
-
-    aboutViewMoreBtn = false;
-    aboutTextHeading.innerText = "";
-    aboutTextPara[0].innerText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`;
-    aboutTextPara[1].innerText = `when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`;
-
-    document.getElementById("ytBtn").style.display = "none";
-    document.getElementById("newsLetterBtn").style.display = "none";
-
-
-    var typewriter2 = new Typewriter(aboutTextHeading, {
-        loop: false
-    });
-
-    typewriter2.typeString("Hey! I'm Kundan Kumar.")
-    .pauseFor(2500)
-    .start();
-
-
-
-  }else {
-
-    aboutViewMoreBtn = true;
-    aboutTextHeading.innerText = "";
-    aboutTextPara[0].innerText = "Eat, Sleep and Code. Below is the link of my news-letter, please subscribe!";
-    aboutTextPara[1].innerText = `I would also like to play cricket, competitive coding, 
-    and cooking. I would also linke to do acting. Below is the link of my youTube shortFilms. 
-    Have a watch and show your love ❤️ on my video.`;
-
-    document.getElementById("ytBtn").style.display = "inline-block";
-    document.getElementById("newsLetterBtn").style.display = "inline-block";
-
-
-
-    var typewriter2 = new Typewriter(aboutTextHeading, {
-        loop: false
-    });
-
-    typewriter2.typeString("Hobbies and interests.")
-    .pauseFor(2500)
-    .start();
-
-
-  }
-
-
-}
-
 
 
 
