@@ -437,6 +437,10 @@ body {
 	margin-right: 5px;
 }
 
+#mobile-project-button {
+	display: none;
+}
+
 
 @media (max-width: 800px) {
 	#projects .card-body .project-info {
@@ -447,6 +451,21 @@ body {
 	#projects .card-body .project-info .project-desc {
 		height: 27rem;
 	}
+}
+
+@media (max-width: 600px) {
+	#project-display-btn {
+		display: none;
+	}
+
+	#mobile-project-button {
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+
 }
 
 
