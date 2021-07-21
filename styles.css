@@ -57,7 +57,11 @@ body {
 	align-items: center;
 }
 
-#nav-bar .offcanvas-body .social-icons>div {
+#nav-bar .offcanvas-body .social-icons>a {
+	text-decoration: none;
+}
+
+#nav-bar .offcanvas-body .social-icons>a>div {
 	height: 3rem;
 	width: 3rem;
 	border-radius: 50%;
@@ -70,7 +74,7 @@ body {
 	font-size: 20px;
 }
 
-#nav-bar .offcanvas-body .social-icons>div:hover {
+#nav-bar .offcanvas-body .social-icons>a>div:hover {
 	cursor: pointer;
 	background-color: #0d6efd;
 	border-color: white;
@@ -179,7 +183,7 @@ body {
 	margin-top: 30px;
 }
 
-#home .titleBtns > button {
+#home .titleBtns > a > button {
 	margin-right: 15px;
 }
 
@@ -226,7 +230,7 @@ body {
 		height: 23rem;
 	}
 
-	#home .titleBtns > button {
+	#home .titleBtns > a >button {
 		margin-right: 6px;
 	}
 
@@ -244,6 +248,15 @@ body {
 	  width: 20%;
 	}
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -370,8 +383,6 @@ body {
 
 	#about .about-right {
 		height: 40rem;
-		background-color: #EEEEEE;
-		border-radius: 6px;
 	}
 
 	#about .about-text-container {
@@ -392,18 +403,20 @@ body {
 	}
 
 	#about .about-right {
-		height: 48rem;
-		background-color: #EEEEEE;
-		border-radius: 6px;
+		height: 46rem;
 	}
 
 	#about .about-text-container {
 		width: 100%;
-		height: 48rem;
+		height: 46rem;
 	}
 
 	.about-text-container > div {
-		padding: 20px;
+		padding: 30px 0px 0px 0px;
+	}
+
+	#about {
+		padding: 10px;
 	}
 }
 
@@ -508,16 +521,20 @@ body {
 }
 
 .project-desc h5 {
-	color: #5C33F6;
+	color: #0d6efd;
 }
 
 .project-desc i {
-	color: #5C33F6;
+	color: #0d6efd;
 	margin-right: 5px;
 }
 
 #mobile-project-button {
 	display: none;
+}
+
+#hl {
+	color: #CD113B;
 }
 
 
@@ -533,16 +550,21 @@ body {
 }
 
 @media (max-width: 600px) {
+
+	#projects {
+		padding: 10px;
+	}
+
 	#project-display-btn {
 		display: none;
 	}
 
 	#mobile-project-button {
-	display: inline-block;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-}
+		display: inline-block;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
 
 
 }
@@ -623,6 +645,11 @@ body {
 
 
 @media (max-width: 700px) {
+
+	#contact {
+		padding: 10px;
+	}
+
 	.form-container {
 		padding: 15px;
 	}
