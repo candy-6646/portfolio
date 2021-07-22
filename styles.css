@@ -351,6 +351,7 @@ body {
 	height: 25rem;
 	background: url("images/profile2.jpg") top center;
 	background-size: cover;
+	margin-top: 40px;
 }
 
 #about .about-text-container {
